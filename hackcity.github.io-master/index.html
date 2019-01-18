@@ -1,0 +1,496 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<script
+				src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+				integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+				crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+		<script type='text/javascript' src='js/particleground.js'></script>
+		<title>HackCity 2019</title>
+	</head>
+
+	<body>
+		<ul id="main-menu">
+			<li class="mobile menu-control" onClick="toggleMenu()">
+			<svg width="16" height="10">
+				<polygon fill="white" points="0,0 16,0 8,10"/>
+			</svg>
+			</li>
+			<!--li class="menu-item"><a href="#schedule">Schedule</a></li-->
+			<li class="menu-item"><a href="#faq">FAQ</a></li>
+			<li class="menu-item"><a href="#map">LOCATION</a></li>
+			<li class="menu-item"><a href="#team">TEAM</a></li>
+            <li class="menu-item"><a href="http://www.hackcity.org/">HACKCITY18</a></li>
+			<!--li class="menu-item"><a href="#sponsors">Sponsors</a></li>
+			<!--li class="menu-item"><a href="#faq">Directions</a></li-->
+		</ul>
+		<header id="main-header">
+			<div class="header-content-wrapper">
+				<img class="logo" src="images/hcLogo2019.png">
+				<!--<img class="logotext" src="images/logo.svg">-->
+				<span class="header-info">
+					<p>City, University of London</p>
+
+					<b>23RD-24TH MARCH 2019</b><br>
+				</span>
+				<div class="header-button-wrapper">
+ 					<!--button><a target="_blank" style="color:white;" href="https://www.eventbrite.com/e/hackcity18-tickets-41291766786">Join the waitlist for tickets!</a></button-->
+					<!--button><a target="_blank" href="https://www.facebook.com/pg/MajorLeagueHacking/photos/?tab=album&album_id=1423917680992239" style="color:white;">Check out the pictures!</a></button -->
+					<!--button><a target="_blank" onClick='signupShow();' style="color:white;">Pre-Register today!</a></button-->
+				</div>
+			</div>
+		</header>
+
+<!--section id="schedule">
+	<div class="content">
+		<h2>Schedule</h2>
+		<div class="table-container">
+			<div class="table-block left">
+				<table>
+				<h4>Saturday</h4>
+					<tr>
+						<th>Time</th>
+						<th>Activity</th>
+						<th>Location</th>
+					</tr>
+					<tr>
+						<td>10:00</td>
+						<td>Registration</td>
+						<td>Main Reception </td>
+					</tr>
+					<tr>
+						<td>11:00</td>
+						<td>Opening Ceremony</td>
+						<td>B200 Lecture Theatre</td>
+					</tr>
+					<tr>
+						<td>11:40</td>
+						<td>Ice Breaker</td>
+						<td>B200 Lecture Theatre</td>
+					</tr>
+					<tr>
+						<td>12:00</td>
+						<td><strong>Hacking Begins</strong></td>
+						<td>EG Rooms</td>
+					</tr>
+					<tr>
+						<td>13:00</td>
+						<td>Lunch</td>
+						<td>Canteen</td>
+					</tr>
+					<tr>
+						<td>14:00</td>
+						<td>Capture the Flag Mini Event</td>
+						<td>Workshop Room - EG04</td>
+					</tr>
+					<tr>
+						<td>15:00</td>
+						<td>Web Development - Kevin Lewis</td>
+						<td>Workshop Room - EG04</td>
+					</tr>
+					<tr>
+						<td>16:00</td>
+						<td>Workshop - Accenture</td>
+						<td>Workshop Room - EG04</td>
+					</tr>
+					<tr>
+						<td>17:00</td>
+						<td>Workshop - Cisco</td>
+						<td>Workshop Room - EG04</td>
+					</tr>
+					<tr>
+						<td>18:00</td>
+						<td>Workshop - GitHub</td>
+						<td>Workshop Room - EG04</td>
+					</tr>
+					<tr>
+						<td>19:00</td>
+						<td>Dinner</td>
+						<td>Canteen</td>
+					</tr>
+					<tr>
+						<td>20:00</td>
+						<td>Mini Game - MLH</td>
+						<td>Workshop Room - EG04</td>
+					</tr>
+					<tr>
+						<td>21:00</td>
+						<td>Mini Event - Accenture</td>
+						<td>Workshop Room - EG04</td>
+					</tr>
+					<tr>
+						<td>00:00</td>
+						<td>Midnight Snack</td>
+						<td>EG Foyer</td>
+					</tr>
+				</table>
+			</div>
+			<div class="table-block right">
+				<table>
+				<h4>Sunday</h4>
+					<tr>
+						<th>Time</th>
+						<th>Activity</th>
+						<th>Location</th>
+					</tr>
+					<tr>
+						<td>08:00</td>
+						<td>Breakfast</td>
+						<td>Canteen</td>
+					</tr>
+					<tr>
+						<td>12:00</td>
+						<td><b>Hacking Ends</b></td>
+						<td>Everywhere</td>
+					</tr>
+					<tr>
+						<td>12:15</td>
+						<td>Lunch</td>
+						<td>Canteen</td>
+					</tr>
+					<tr>
+						<td>14:00</td>
+						<td>Presentations</td>
+						<td>ELG01 Lecture Theatre</td>
+					</tr>
+					<tr>
+						<td>16:00</td>
+						<td>Awards and Closing Ceremony</td>
+						<td>ELG01 Lecture Theatre</td>
+					</tr>
+					<tr>
+						<td>17:30</td>
+						<td>End of event</td>
+						<td>Everywhere</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</section>
+		<!--
+		<section id="schedule">
+			Add table here for schedule.
+		</section>
+		-->
+		<section id="faq">
+		<div class="content">
+			<h2>FAQ</h2>
+			<div class="question">
+				  <h3>Are tickets free?</h3>
+          <p>Of course they are!</p>
+        </div>
+        <div class="question">
+          <h3>But what if I can't code?</h3>
+					<p>It doesn't matter! Regardless of what you think of your technical ability, this will be a great opportunity to learn some new skills!</p>
+        </div>
+        <div class="question">
+          <h3>What if I study outside of the UK?</h3>
+          <p>You are still more than welcome to join us! However, we cannot sponsor visas. We also do not offer travel reimbursements.</p>
+        </div>
+        <div class="question">
+          <h3>When and where will it be?</h3>
+          <p>It will be held on 23rd - 24th March 2019 - held at <a href="https://www.google.co.uk/maps/place/London/@51.5278365,-0.1024559,19.2z/data=!3m1!5s0x48761b5a55d9d4a7:0x33062815d301a9f0!4m12!1m6!3m5!1s0x48761ca7b1d83351:0x570d19c20ab22a83!2sCity,+University+of+London!8m2!3d51.5280395!4d-0.1015937!3m4!1s0x48761b5a516556df:0xbc8a691339285ca9!8m2!3d51.5278179!4d-0.1025651" target="_blank">City, University of London</a> (Northampton Square entrance).</p>
+				</div>
+				<div class="question">
+					<h3>What do I bring?</h3>
+					<p>Bring your laptop, phone, chargers and don't forget your <strong>student ID.</strong></p>
+				</div>
+				<div class="question">
+					<h3>What can I expect from Hack City?</h3>
+					<p>An entire weekend of great company, good food and plenty of swag! We’ll also have hardware and tons of mentors.</p>
+				</div>
+				<div class="question">
+					<h3>Count me in; how do I sign up? </h3>
+					<p>You can pre-reigster <a onClick='signupShow();'> here </a>for early release tickets! General release dates will be announced soon enough.</p>
+				</div>
+				<div class="question">
+					<h3>Do you have a Code of Conduct</h3>
+					<p>Yes! We strictly adhere by the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a> </p>
+				</div>
+				<div class="question last-question">
+					<h3>What if I have more questions?</h3>
+					<p>We'll be happy to answer. Contact us by email at <a href="mailto:techsociety@city.ac.uk">techsociety@city.ac.uk</a>, ping us on
+					<a href="https://www.facebook.com/citytechsoc">Facebook</a>, or shoot us a <a href="https://twitter.com/citytechsoc">tweet</a>. We'll get back to you as soon as possible.</p></div>
+			</div>
+		</section>
+
+		<div class="overlay" onClick="style.pointerEvents='none'"></div>
+		<section id="map">
+			<div class="overlay" onClick="style.pointerEvents='none'"></div>
+			<div id="gmap-canvas"></div>
+		</section>
+
+		<section id="faq" style="text-align: center">
+			<div class="question">
+				<h2>Nearest Tube Stations:</h2> </br>
+				<ul>
+					<li> 1. Angel (Northern Line)</li>
+					</br>
+					<li> 2. Farringdon (Hammersmith & City, Circle and Metropolitan Lines)</li>
+					</br>
+					<li> 3. Old Street (Northern Line)</li>
+				</ul>
+			</div>
+		</section>
+
+		<section id="team">
+				<div class="content">
+					<h2>Our Team</h2>
+					<div class="team-container">
+						<div class="core" align="center">
+							<div class="member">
+								<div class="member">
+								 <img src="images/squad/Esraa.jpg">
+								 <span class="name">Esraa <br> <p class="text-nowrap"style="font-weight: normal;">Lead Organiser - Head (Finance)</p></span>
+							 </div>
+								<div class="member">
+									<img src="images/squad/Akash.png">
+									<span class="name">Akash <br> <p style="font-weight: normal;">Head (Logistics)</p></span>
+								</div>
+								<div class="member">
+									<img src="images/squad/Kukena.jpg">
+									<span class="name">Kukena <br> <p class="text-nowrap" style="font-weight: normal;">Head (Media and Marketing)</p></span>
+								</div>
+								<div class="member">
+									<img src="images/squad/Gianfranco.jpg">
+									<span class="name">Gianfranco <br> <p class="text-nowrap" style="font-weight: normal;">Head (Hacker Experience)</p></span>
+								</div>
+								<div class="member">
+									<img src="images/squad/Ayse.jpg">
+									<span class="name">Ayse <br> <p class="text-nowrap" style="font-weight: normal;">Logistics</p></span>
+								</div>
+
+
+								<div class="member">
+									<img src="images/squad/Marius.png">
+									<span class="name">Marius <br> <p class="text-nowrap" style="font-weight: normal;">Hacker Experience</p></span>
+								</div>
+								<div class="member">
+									<img src="images/squad/Sherwin.jpeg">
+									<span class="name">Sherwin <br> <p class="text-nowrap" style="font-weight: normal;">Media and Marketing</p></span>
+								</div>
+							</div>
+						</div>
+					</div>
+			</section>
+			<footer id="main-footer">
+			- &nbsp;Created by <a href="https://github.com/tnguyen/durhack" target="_blank">tnguyen</a>
+			&nbsp;-&nbsp; Edited by <a href="https://www.cityuni.tech/" target="_blank">City Tech Society</a> | 2019 &nbsp;-&nbsp; <a href="#" onclick="cats()"></a>
+		</footer>
+		<!--section id="sponsors">
+			<div class="content">
+				<h2><u>Sponsors & Partners</u></h2>
+				<!--Platinum Sponsors-->
+				<!--div class="cooler_helpers">
+					<h3 style="color:lightyellow;"><strong>Platinum</strong></h3>
+					<a href="https://accenture.com" target="_blank"><img style="width:350px; height: auto;" src="images/sponsors/accenture.png" class="l"/></a>
+				</div>
+				<!--Gold Sponsors-->
+				<!--div class="cooler_helpers">
+					<h3 style="color:gold;">Gold</h3>
+	       	<a href="https://www.cisco.com" target="_blank"><img style="width:270px; height: auto;" src="images/sponsors/cisco.png" class="m"/></a>
+				</div>
+				<!--Silver Sponsors-->
+				<!--div class="cooler_helpers">
+					<h3 style="color:silver;">Silver</h3>
+					<a href="https://github.com" target="_blank"><img style="width:200px; height: auto;" src="images/sponsors/gh.svg" class="l"/></a>
+					<a href="https://www.starlingbank.com/" target="_blank"><img style="width:370px; height: auto;" src="images/sponsors/starling.png" class="l"/></a>
+					<a href="http://www.firstco.uk.com" target="_blank"><img style="width:220px; height: auto;" src="images/sponsors/firstco.png" class="l"/></a>
+					<a href="https://www.nexmo.com" target="_blank"><img style="width:250px; height: auto;" src="images/sponsors/nexmo.png" class="l"/></a>
+				</div>
+				<!--Bronze Sponsors-->
+				<!--div class="cooler_helpers">
+					<h3 style="color:#cd7f32;">Bronze</h3>
+					<a href="https://socgen.qumucloud.com/view/H8w3gU7wDJs" target="_blank"><img style="width:300px; height: auto;" src="images/sponsors/socgen.png" class="l"/></a>
+				</div>
+
+				<br/>
+				<!--Partners-->
+				<!--div class="cooler_helpers">
+					<h3 style="color:#ffffff;">Partners</h3>
+	        <a href="https://www.city.ac.uk/department-computer-science" target="_blank"><img style="width:150px; height: auto;" src="images/sponsors/cityCS.svg" class="m"/></a>
+					<a href="https://www.digitalocean.com" target="_blank"><img style="width:300px; height: auto;" src="images/sponsors/digitalOcean.png" class="m"/></a>
+					<a href="https://mlh.io" target="_blank"><img style="width:200px; height: auto;" src="images/sponsors/mlh.svg" class="m"/></a>
+					<a href="http://get.tech/" target="_blank"><img style="width:200px; height: auto;" src="images/sponsors/tech.png" class="m"/></a>
+				</div>
+			</div>
+		</section>
+		<footer id="main-footer">
+			Created by <a href="https://github.com/tnguyen/durhack" target="_blank">tnguyen</a>
+			&nbsp;-&nbsp; Edited by <a href="https://www.cityuni.tech/" target="_blank">City Tech Society <3</a> | 2019 &nbsp;-&nbsp; <a href="#" onClick="cats()">&#9679;</a>
+		</footer>
+		</body>
+
+		<!--a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/eu-2018/events?utm_source=eu-2018&utm_medium=TrustBadge&utm_campaign=eu-2018&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg" alt="Major League Hacking 2018 Hackathon Season" style="width:100%"></a--->
+		<div id="signup-wrapper" style="display:none; opacity:0;">
+			<div id="signup-form">
+				<img onClick="signupHide()" src="images/close.png" class="signup-close">
+					<form action="https://twitter.us13.list-manage.com/subscribe?u=19caad93518708ccfc4e938ca&id=69f51cc0e4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+					<h2>Subscribe to our mailing list</h2>
+					<p>Get updates on ticket release dates and other stuff - We don't spam and only email you stuff you actually want to know.</p>
+					<div class="mc-field-group">
+						<label for="mce-EMAIL">Email Address:  <span class="asterisk">*</span></label>
+						<input style="color:black;" type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+					</div>
+					<div class="mc-field-group">
+						<label for="mce-FNAME">First Name: <span class="asterisk">*</span></label>
+						<input style="color:black;" type="text" value="" name="FNAME" class="required" id="mce-FNAME">
+					</div>
+					<div class="mc-field-group">
+						<label for="mce-LNAME">Last Name: <span class="asterisk">*</span></label>
+						<input style="color:black;" type="text" value="" name="LNAME" class="required" id="mce-LNAME">
+					</div>
+					<div id="mce-responses" class="clear">
+						<div class="response" id="mce-error-response" style="display:none"></div>
+						<div class="response" id="mce-success-response" style="display:none"></div>
+					</div>
+					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_ee9b5d55cd3684102e8203453_c3c26e2a56" tabindex="-1" value=""></div>
+					<div class="clear">
+						<div class="indicates-required"><span class="asterisk">*</span> indicates required</div>
+						<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+					</div>
+				</form>
+			</div>
+		</div>
+	</body>
+
+	<script type="text/javascript" src="https://maps.google.com/maps/api/js?key=AIzaSyD70GNb2FLOz3cVO-LpF0Jjk8STZgGZKX0"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script type="text/javascript">
+		function init_map(){
+			var myOptions = {zoom:15,center:new google.maps.LatLng(51.5277895,  -0.10232189999999264),mapTypeId: google.maps.MapTypeId.ROADMAP};
+			map = new google.maps.Map(document.getElementById("gmap-canvas"), myOptions);
+			marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.5277895,  -0.10232189999999264)});
+			infowindow = new google.maps.InfoWindow({
+				content: '<div class="map-pointer"><strong>City, University of London</strong>, Main Entrance</div>',
+				maxWidth: 150
+			});
+			google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});
+			infowindow.open(map,marker);
+		}
+		google.maps.event.addDomListener(window, 'load', init_map);
+
+		// Fade header code
+		var header = document.getElementById("main-header");
+		var menu = document.getElementById("main-menu");
+		var faded = false;
+		document.onscroll = function() {
+			var headerHeight = header.offsetHeight;
+			if (document.body.scrollTop > headerHeight) {
+				if (!faded) {
+					menu.style.background = "rgb(0, 0, 0, 0.74)";
+					faded = true;
+				}
+			} else if (faded) {
+				menu.style.background = "rgb(0, 0, 0, 0)";
+				faded = false;
+			}
+		}
+
+        $(function() {
+            var header = $("#main-menu");
+
+            $(window).scroll(function() {
+                var scroll = $(window).scrollTop();
+                if (scroll >= 50) {
+                    header.addClass("scrolled");
+                } else {
+                    header.removeClass("scrolled");
+                }
+            });
+
+        });
+
+		//Menu scrolly uppy downy
+		var expanded = false;
+		var menuitems = document.getElementsByClassName("menu-item");
+		var menucontrol = document.getElementsByClassName("menu-control")[0];
+		var i = 0;
+		function toggleMenu() {
+			if (expanded) {
+				for (i = 0; i < menuitems.length; i++) {
+					var item = menuitems[i];
+					item.style.height = "0px";
+					item.style.opacity = "0";
+				}
+				menucontrol.style.transform = "rotate(0deg)";
+				menucontrol.style.textAlign = "left";
+				menucontrol.style.marginBottom = "0px";
+				expanded = false;
+			} else {
+				for (i = 0; i < menuitems.length; i++) {
+					var item = menuitems[i];
+					item.style.height = "55px";
+					item.style.opacity = "1";
+				}
+				menucontrol.style.transform = "rotate(180deg)";
+				menucontrol.style.textAlign = "right";
+				menucontrol.style.marginBottom = "20px";
+				expanded = true;
+			}
+		}
+
+		// Signup boxy doo
+		var signupWrapper = document.getElementById("signup-wrapper");
+		function signupShow() {
+			signupWrapper.style.display = "flex";
+			signupWrapper.style.opacity = "0";
+			setTimeout(function(){
+				signupWrapper.style.opacity = "1";
+			},100);
+		}
+		document.getElementById("signup-wrapper").addEventListener("click", function( e ){
+			//Workaround to stop clicks on child closing the window
+			e = window.event || e;
+			if(this === e.target) {
+				signupHide();
+			}
+		});
+		function signupHide() {
+			setTimeout(function(){
+				signupWrapper.style.display = "none";
+			},500);
+			signupWrapper.style.opacity = "0";
+		}
+		function cats() {
+			setInterval(function() {
+				var cat = document.createElement("div");
+				cat.className = "cat";
+				var width = Math.floor((Math.random() * 200) + 100);
+				var height = Math.floor((Math.random() * 200) + 50);
+				var startLeft = Math.floor((Math.random() * screen.width));
+				var img = document.createElement("img");
+				img.setAttribute('width', width);
+				img.setAttribute('height', height);
+				img.setAttribute('src', "https://placekitten.com/"+width+"/"+height);
+				cat.style.top = "0px";
+				cat.style.left = startLeft+"px";
+				cat.appendChild(img);
+				document.getElementsByTagName("body")[0].appendChild(cat);
+				setTimeout(function() {
+					var cheight = document.getElementsByTagName("body")[0].clientHeight;
+					cat.style.top = Math.floor((Math.random() * cheight) + 200)+"px";
+				},100);
+			}, 1000);
+		}
+		 document.addEventListener('DOMContentLoaded', function () {
+		   var pg = particleground(document.getElementById('sponsors'), {
+		 	    dotColor: '#ffffff',
+		 	    lineColor: '#fff8f6',
+		 	    maxSpeedX: 0.3,
+		 	    maxSpeedY: 0.3,
+		 	    particleRadius: 7,
+		 	    parallax: false
+		 	  });
+//		    pg.pause();
+		   }, false);
+	</script>
+</html>
+<!-- 63 6f 70 79 77 72 69 74 65 64 20 62 79 20 79 6f 75 72 20 6d 75 6d -->
